@@ -20,20 +20,10 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.ref }}
 
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
       - name: Set Chart Version
         uses: mikefarah/yq@master
         with:
           cmd: CHART_VERSION=$(cat version.txt) yq -i '.version = strenv(CHART_VERSION)'  _helm_chart/chart/Chart.yaml
-
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
       - name: Commit Chart Version
         uses: EndBug/add-and-commit@v9
