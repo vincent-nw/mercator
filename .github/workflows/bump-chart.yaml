@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - ci
-      
+
 
 jobs:
   bump-chart:
@@ -26,7 +26,8 @@ jobs:
 
       - name: Set Chart Version
         uses: mikefarah/yq@master
-        cmd: CHART_VERSION=$(cat version.txt) yq -i '.version = strenv(CHART_VERSION)'  _helm_chart/chart/Chart.yaml
+        with:
+          cmd: CHART_VERSION=$(cat version.txt) yq -i '.version = strenv(CHART_VERSION)'  _helm_chart/chart/Chart.yaml
 
       - name: Configure Git
         run: |
