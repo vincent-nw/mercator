@@ -2,6 +2,32 @@ apiVersion: v1
 entries:
   mercator:
   - apiVersion: v2
+    appVersion: 2025.06.06
+    created: "2025-06-11T16:34:56.947831629Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 20.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 16.x.x
+    description: Mercator is a powerful and versatile open-source web application
+      designed to facilitate the mapping of information systems, as outlined in the
+      Mapping The Information System Guide by ANSSI.
+    digest: 82d1da5005e0a3f34e5f9938e251e0d85371b81b4cbcd67891f4c92effdc1325
+    home: https://github.com/dbarzin/mercator
+    icon: https://raw.githubusercontent.com/dbarzin/mercator/refs/heads/master/public/images/mercator.png
+    maintainers:
+    - name: Mercator
+      url: https://github.com/dbarzin/mercator/chart
+    name: mercator
+    type: application
+    urls:
+    - https://github.com/vincent-nw/mercator/releases/download/mercator-2.0.0/mercator-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2025-05-02T14:56:08.204201507Z"
     dependencies:
@@ -27,4 +53,4 @@ entries:
     urls:
     - https://github.com/vincent-nw/mercator/releases/download/mercator-0.1.0/mercator-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-02T14:56:08.204210083Z"
+generated: "2025-06-11T16:34:56.947847068Z"
