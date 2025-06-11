@@ -1,4 +1,4 @@
-import{D as q,c as tt,u as et,E as nt,a as it,i as j,v as k,t as R,d as ot,b as at,e as rt,f as A,g as st,C as D,r as Y,B as lt,h as ht,j as ut,L as ct,p as dt,k as ft}from"./chart-DSVfdqgm.js";import{p as gt}from"./chartjs-plugin-datalabels.esm-oxwyG89a.js";import{G as pt}from"./gauge-controller-DRgqKV_U.js";/*!
+import{D as q,c as tt,u as et,E as nt,a as it,i as j,v as k,t as R,d as ot,b as at,e as rt,f as A,g as st,C as D,r as Y,B as lt,h as ht,j as ut,L as ct,p as dt,k as ft}from"./chart-CXOS05Cq.js";import{p as gt}from"./chartjs-plugin-datalabels.esm-DbC7H42Q.js";import{G as pt}from"./gauge-controller-CZseLVkM.js";/*!
  * chartjs-chart-treemap v3.1.0
  * https://chartjs-chart-treemap.pages.dev/
  * (c) 2024 Jukka Kurkela

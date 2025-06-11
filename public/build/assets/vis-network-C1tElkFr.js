@@ -40,8 +40,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
  *
  * A dynamic, browser-based visualization library.
  *
- * @version 9.1.9
- * @date    2023-11-03T01:42:27.418Z
+ * @version 9.1.10
+ * @date    2025-05-10T16:57:42.930Z
  *
  * @copyright (c) 2011-2017 Almende B.V, http://almende.com
  * @copyright (c) 2017-2019 visjs contributors, https://github.com/visjs

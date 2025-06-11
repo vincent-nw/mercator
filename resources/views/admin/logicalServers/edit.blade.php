@@ -14,7 +14,7 @@
         <div class="col-md-4">
             <div class="form-group">
                 <label class="required" for="name">{{ trans('cruds.logicalServer.fields.name') }}</label>
-                <input class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" name="name" id="name" value="{{ old('name', $logicalServer->name) }}" required maxlength='32'>
+                <input class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" name="name" id="name" value="{{ old('name', $logicalServer->name) }}" required maxlength='32' autofocus/>
                 @if($errors->has('name'))
                     <div class="invalid-feedback">
                         {{ $errors->first('name') }}
@@ -336,7 +336,6 @@
                 <div class="form-group">
                     <label class="recommended" for="domain">{{ trans('cruds.logicalServer.fields.domain') }}</label>
                     <select class="form-control select2 {{ $errors->has('domains') ? 'is-invalid' : '' }}" name="domain_id" id="domain_id">
-                        <option></option>
                         @foreach($domains as $id => $name)
                             <option value="{{ $id }}" {{ $id==old('domain_id', $logicalServer->domain_id) ? 'selected' : '' }}>{{ $name }}</option>
                         @endforeach
@@ -382,10 +381,10 @@
         </div>
     </div>
     <div class="form-group">
-        <a class="btn btn-default" href="{{ route('admin.logical-servers.index') }}">
+        <a id="btn-cancel" class="btn btn-default" href="{{ route('admin.logical-servers.index') }}">
             {{ trans('global.back_to_list') }}
         </a>
-        <button class="btn btn-danger" type="submit">
+        <button id="btn-save" class="btn btn-danger" type="submit">
             {{ trans('global.save') }}
         </button>
     </div>
